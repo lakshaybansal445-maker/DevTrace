@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Geist', monospace;
+
+  --color-canvas: #F7F8FC;
+  --color-surface: #FFFFFF;
+  --color-surface-dim: #F3F2FF;
+  --color-border-subtle: #E8EAF1;
+  --color-brand-primary: #6558D9;
+  --color-brand-hover: #8B7CF6;
+  --color-brand-dark: #4C3DBF;
+  --color-ink-primary: #202333;
+  --color-ink-secondary: #777B8A;
+  --color-ink-tertiary: #A0A4B4;
+}
+
+:root {
+  --bg-canvas: #F7F8FC;
+  --bg-card: #FFFFFF;
+  --text-main: #202333;
+  --text-muted: #777B8A;
+  --border-line: #E8EAF1;
+  --brand: #6558D9;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars for high-density trace views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0E1F7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8C4D6;
+}
